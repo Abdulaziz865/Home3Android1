@@ -42,7 +42,6 @@ public class ListOfNameAdapter extends RecyclerView.Adapter<ListOfNameAdapter.Vi
             super(view);
             tvName = view.findViewById(R.id.tv_text);
         }
-
         public void onBind(String name) {
             tvName.setText(name);
         }
