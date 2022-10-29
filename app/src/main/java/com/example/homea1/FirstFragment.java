@@ -26,12 +26,12 @@ public class FirstFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        
+
         editPassword = view.findViewById(R.id.et_password);
         buttonConfig = view.findViewById(R.id.btn_button);
-        button();
+        buttonClick();
     }
-    public void button (){
+    public void buttonClick (){
         buttonConfig.setOnClickListener(view -> {
 
             String password = editPassword.getText().toString().trim();
